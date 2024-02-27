@@ -8,11 +8,15 @@ public class OrganSpot : MonoBehaviour
     public bool filled;
     public int spotID;
     private SpriteRenderer spriteRenderer;
+    public AudioClip GoodClip;
+    public AudioClip WrongClip;
+    private AudioSource audioSource;
+    public ParticleSystem particles;
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        
+        audioSource = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -22,7 +26,7 @@ public class OrganSpot : MonoBehaviour
 
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
-            if (hit.collider != null)
+            if (hit.collider == gameObject.GetComponent<Collider2D>())
             {
                 Debug.Log("Target Position: " + hit.collider.gameObject.transform.position);
                 placeOrgan();
@@ -30,15 +34,6 @@ public class OrganSpot : MonoBehaviour
         }
     }
 
-    /*
-  public void RemoveOrgan()
-    {
-        if(GameManager.SelectedOrganID == spotID)
-        {
-            spriteRenderer.gameObject.SetActive(false);
-        }
-    }
-    */
 
 
 
@@ -53,6 +48,14 @@ public class OrganSpot : MonoBehaviour
                 spriteRenderer.enabled = false;
                 GameManager.SelectedOrganID = 0;
                 spriteRenderer.sprite = null;
+
+            }
+            else
+            {
+                PlaySound(false);
+                PlayVFX(false);
+
+
             }
         }
     }
@@ -60,8 +63,36 @@ public class OrganSpot : MonoBehaviour
 
 
 
+    public void PlaySound(bool feedback)
+    {
+        if(feedback)
+        {
+            {
+                audioSource.clip = GoodClip;
+                audioSource.Play();
+            } }
+        else
+        {
+            audioSource.clip = WrongClip;
+            audioSource.Play();
+        }
 
 
+
+    }
+
+    public void PlayVFX(bool feedback)
+    {
+        if (feedback)
+        {
+            {
+               
+                particles.Play();
+            }
+        }
+      
+
+    }
 
 
 
