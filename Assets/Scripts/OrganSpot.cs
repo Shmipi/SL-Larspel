@@ -12,9 +12,11 @@ public class OrganSpot : MonoBehaviour
     public AudioClip WrongClip;
     private AudioSource audioSource;
     public ParticleSystem particles;
+    private GameObject gameManager;
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = GameObject.Find("GameManager");
         spriteRenderer = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
     }
@@ -45,9 +47,9 @@ public class OrganSpot : MonoBehaviour
                 {
 
                 filled = true;
-                spriteRenderer.enabled = false;
+               // spriteRenderer.enabled = false;
                 GameManager.SelectedOrganID = 0;
-                spriteRenderer.sprite = null;
+                spriteRenderer.sprite = gameManager.GetComponent<GameManager>().spriteList[spotID - 1];
 
             }
             else

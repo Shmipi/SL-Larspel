@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static int score;
     public static int time;
     public static List<GameObject> gameObjects = new List<GameObject>();
+    public  List<Sprite> spriteList = new List<Sprite> ();
     public static int SelectedOrganID;
 
 
