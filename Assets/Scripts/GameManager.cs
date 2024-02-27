@@ -7,8 +7,10 @@ public class GameManager : MonoBehaviour
     public static int score;
     public static int time;
     public static List<GameObject> gameObjects = new List<GameObject>();
-    public static GameObject selectedOrgan;
     public static int SelectedOrganID;
+
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(SelectedOrganID);
     }
 }

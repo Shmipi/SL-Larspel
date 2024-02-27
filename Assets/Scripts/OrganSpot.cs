@@ -30,7 +30,17 @@ public class OrganSpot : MonoBehaviour
         }
     }
 
-  
+    /*
+  public void RemoveOrgan()
+    {
+        if(GameManager.SelectedOrganID == spotID)
+        {
+            spriteRenderer.gameObject.SetActive(false);
+        }
+    }
+    */
+
+
 
     public void placeOrgan()
     {
