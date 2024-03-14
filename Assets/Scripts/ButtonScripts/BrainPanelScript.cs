@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BrainPanelScript : MonoBehaviour
 {
@@ -26,6 +27,6 @@ public class BrainPanelScript : MonoBehaviour
 
     public void PlayBrainLevel()
     {
-        //SceneManager.LoadScene(0);
+        SceneManager.LoadScene(4);
     }
 }
