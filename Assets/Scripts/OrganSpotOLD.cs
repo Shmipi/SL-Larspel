@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class OrganSpot : MonoBehaviour
+public class OrganSpotOLD : MonoBehaviour
 {
     public bool filled;
     public int spotID;
