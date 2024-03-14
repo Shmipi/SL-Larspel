@@ -23,10 +23,6 @@ public class GameManager : MonoBehaviour
         organSpotsOld = FindObjectsOfType<OrganSpotOLD>();
         organSpots = FindObjectsOfType<OrganSpot>();
 
-        Debug.Log(organSpots[1]);
-        Debug.Log(organSpots[2]);
-        Debug.Log(organSpots[3]);
-
         if (organSpotsOld != null )
         {
             organSpotsBool = false;
@@ -56,7 +52,7 @@ public class GameManager : MonoBehaviour
     {
         int nrCompleted = 0;
 
-        if(organSpotsBool == false)
+        if(organSpotsOld != null)
         {
             for (int i = 0; i < organSpotsOld.Length; i++)
             {
@@ -65,7 +61,9 @@ public class GameManager : MonoBehaviour
                     nrCompleted++;
                 }
             }
-        } else
+        }
+
+        if (organSpots != null) 
         {
             for (int i = 0; i < organSpots.Length; i++)
             {
@@ -73,9 +71,9 @@ public class GameManager : MonoBehaviour
                 {
                     nrCompleted++;
                 }
+
             }
         }
-
         Debug.Log("Nr Completed: " + nrCompleted);
         Debug.Log("Nr of Slots: " + nrOfSpots);
 
