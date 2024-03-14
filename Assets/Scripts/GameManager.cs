@@ -8,20 +8,41 @@ public class GameManager : MonoBehaviour
     public static int score;
     public static int time;
     public static List<GameObject> gameObjects = new List<GameObject>();
+    public OrganSpotOLD[] organSpotsOld;
     public OrganSpot[] organSpots;
     public  List<Sprite> spriteList = new List<Sprite> ();
     public static int SelectedOrganID;
     private int nrOfSpots;
+    private bool organSpotsBool;
 
 
     
     // Start is called before the first frame update
     void Start()
     {
+        organSpotsOld = FindObjectsOfType<OrganSpotOLD>();
         organSpots = FindObjectsOfType<OrganSpot>();
-        for(int i = 0; i < organSpots.Length; i++)
+
+        Debug.Log(organSpots[1]);
+        Debug.Log(organSpots[2]);
+        Debug.Log(organSpots[3]);
+
+        if (organSpotsOld != null )
         {
-            nrOfSpots++;
+            organSpotsBool = false;
+            for (int i = 0; i < organSpotsOld.Length; i++)
+            {
+                nrOfSpots++;
+            }
+        }
+
+        if (organSpots != null)
+        {
+            organSpotsBool = true;
+            for (int i = 0; i < organSpots.Length; i++)
+            {
+                nrOfSpots++;
+            }
         }
     }
 
@@ -35,10 +56,23 @@ public class GameManager : MonoBehaviour
     {
         int nrCompleted = 0;
 
-        for(int i = 0;i < organSpots.Length;i++)
+        if(organSpotsBool == false)
         {
-            if (organSpots[i].filled == true) {
-                nrCompleted++;
+            for (int i = 0; i < organSpotsOld.Length; i++)
+            {
+                if (organSpotsOld[i].filled == true)
+                {
+                    nrCompleted++;
+                }
+            }
+        } else
+        {
+            for (int i = 0; i < organSpots.Length; i++)
+            {
+                if (organSpots[i].filled == true)
+                {
+                    nrCompleted++;
+                }
             }
         }
 
