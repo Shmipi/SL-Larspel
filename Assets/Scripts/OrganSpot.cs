@@ -53,7 +53,7 @@ public class OrganSpot : MonoBehaviour
                 GameManager.SelectedOrganID = 0;
                 //spriteRenderer.sprite = gameManager.GetComponent<GameManager>().spriteList[spotID - 1];
                 connectedSprite.gameObject.SetActive(true);
-
+                particles.Emit(4);
                 gameManager.CheckGameState();
 
             }

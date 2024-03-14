@@ -7264,6 +7264,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 469959626644833512, guid: d495bb7664c0aa94a97188fc4cff001b, type: 3}
+      propertyPath: VictoryPanel
+      value: 
+      objectReference: {fileID: 266392803}
+    - target: {fileID: 469959626644833512, guid: d495bb7664c0aa94a97188fc4cff001b, type: 3}
       propertyPath: spriteList.Array.size
       value: 5
       objectReference: {fileID: 0}
