@@ -13,7 +13,6 @@ public class OrganSpotOLD : MonoBehaviour
     private AudioSource audioSource;
     public ParticleSystem particles;
     private GameManager gameManager;
-    public GameObject connectedSprite;
 
     // Start is called before the first frame update
     void Start()
@@ -52,7 +51,6 @@ public class OrganSpotOLD : MonoBehaviour
                // spriteRenderer.enabled = false;
                 GameManager.SelectedOrganID = 0;
                 spriteRenderer.sprite = gameManager.GetComponent<GameManager>().spriteList[spotID - 1];
-                connectedSprite.gameObject.SetActive(true);
 
                 gameManager.CheckGameState();
 
