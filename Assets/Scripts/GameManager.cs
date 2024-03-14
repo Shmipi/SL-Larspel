@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static int score;
     public static int time;
     public static List<GameObject> gameObjects = new List<GameObject>();
-    public OrganSpot[] organSpots;
+    public OrganSpotOLD[] organSpots;
     public  List<Sprite> spriteList = new List<Sprite> ();
     public static int SelectedOrganID;
     private int nrOfSpots;
@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        organSpots = FindObjectsOfType<OrganSpot>();
+        organSpots = FindObjectsOfType<OrganSpotOLD>();
         for(int i = 0; i < organSpots.Length; i++)
         {
             nrOfSpots++;
