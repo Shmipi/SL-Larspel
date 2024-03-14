@@ -6,11 +6,16 @@ using UnityEngine.UI;
 public class organButton : MonoBehaviour
 {
     public int organID;
+    private GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
-       // gameObject.GetComponent<Button>().onClick.
-    }
+        gameManager = FindObjectOfType<GameManager>();
+
+        gameObject.GetComponent<Image>().sprite = gameManager.GetComponent<GameManager>().spriteList[organID - 1];
+        // gameObject.GetComponent<Button>().onClick.
+        
+    }  
 
     // Update is called once per frame
     void Update()
