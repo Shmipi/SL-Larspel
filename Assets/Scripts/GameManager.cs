@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public static int SelectedOrganID;
     private int nrOfSpots;
     private bool organSpotsBool;
-
+    public GameObject VictoryPanel;
 
     
     // Start is called before the first frame update
@@ -88,5 +88,10 @@ public class GameManager : MonoBehaviour
     private void Victory()
     {
         Debug.Log("Victory");
+        if(VictoryPanel != null)
+        {
+            VictoryPanel.SetActive(true);
+        }
+
     }
 }

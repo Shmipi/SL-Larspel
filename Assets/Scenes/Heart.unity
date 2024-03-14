@@ -1445,7 +1445,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 549607048}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1791486130}
+        m_TargetAssemblyTypeName: VictoryMenuScript, Assembly-CSharp
+        m_MethodName: Menu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &549607048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1618,6 +1630,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 469959626644833512, guid: d495bb7664c0aa94a97188fc4cff001b, type: 3}
+      propertyPath: VictoryPanel
+      value: 
+      objectReference: {fileID: 1791486126}
     - target: {fileID: 469959626644833512, guid: d495bb7664c0aa94a97188fc4cff001b, type: 3}
       propertyPath: spriteList.Array.size
       value: 43
@@ -3218,7 +3234,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1559580722}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1791486130}
+        m_TargetAssemblyTypeName: VictoryMenuScript, Assembly-CSharp
+        m_MethodName: PlayAgain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1559580722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3534,13 +3562,14 @@ GameObject:
   - component: {fileID: 1791486127}
   - component: {fileID: 1791486129}
   - component: {fileID: 1791486128}
+  - component: {fileID: 1791486130}
   m_Layer: 5
   m_Name: Victory Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1791486127
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3603,6 +3632,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791486126}
   m_CullTransparentMesh: 1
+--- !u!114 &1791486130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791486126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f765e489bb7ad4599ecf92bd9768ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1840598456
 GameObject:
   m_ObjectHideFlags: 0
