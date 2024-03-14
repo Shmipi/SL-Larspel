@@ -12,7 +12,9 @@ public class organButton : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
 
-        gameObject.GetComponent<Image>().sprite = gameManager.GetComponent<GameManager>().spriteList[organID - 1];
+        //KANSKE TA MED DET HÄR IDK
+       // gameObject.GetComponent<Image>().sprite = gameManager.GetComponent<GameManager>().spriteList[organID - 1];
+
         // gameObject.GetComponent<Button>().onClick.
         
     }  
