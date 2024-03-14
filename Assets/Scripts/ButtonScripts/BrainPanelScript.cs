@@ -27,6 +27,6 @@ public class BrainPanelScript : MonoBehaviour
 
     public void PlayBrainLevel()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(2);
     }
 }
