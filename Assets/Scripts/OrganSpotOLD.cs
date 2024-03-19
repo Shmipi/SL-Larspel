@@ -12,6 +12,7 @@ public class OrganSpotOLD : MonoBehaviour
     public AudioClip WrongClip;
     private AudioSource audioSource;
     public ParticleSystem particles;
+    public ParticleSystem badParticles;
     private GameManager gameManager;
 
     // Start is called before the first frame update
@@ -54,6 +55,7 @@ public class OrganSpotOLD : MonoBehaviour
 
                 gameManager.CheckGameState();
 
+                PlayVFX(true);
             }
             else
             {
@@ -88,14 +90,21 @@ public class OrganSpotOLD : MonoBehaviour
 
     public void PlayVFX(bool feedback)
     {
-        if (feedback)
+        if (feedback == true)
         {
             {
-               
-                particles.Play();
+
+                particles.Emit(5);
+
             }
         }
-      
+        else
+        {
+            badParticles.Emit(5);
+            Debug.Log("fel");
+        }
+
+
 
     }
 

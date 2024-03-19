@@ -12,6 +12,7 @@ public class OrganSpot : MonoBehaviour
     public AudioClip WrongClip;
     private AudioSource audioSource;
     public ParticleSystem particles;
+    public ParticleSystem badParticles;
     private GameManager gameManager;
     public GameObject connectedSprite;
 
@@ -90,12 +91,17 @@ public class OrganSpot : MonoBehaviour
 
     public void PlayVFX(bool feedback)
     {
-        if (feedback)
+        if (feedback==true)
         {
             {
                
-                particles.Play();
+                particles.Emit(5);
             }
+        }
+        else
+        {
+            badParticles.Emit(5);
+            Debug.Log("fel");
         }
       
 

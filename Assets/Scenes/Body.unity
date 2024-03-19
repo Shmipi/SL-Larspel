@@ -221,7 +221,8 @@ MonoBehaviour:
   spotID: 4
   GoodClip: {fileID: 0}
   WrongClip: {fileID: 0}
-  particles: {fileID: 0}
+  particles: {fileID: 7459200273944341767, guid: 283bfaca49fe2eb478fb1032a37e62d3, type: 3}
+  badParticles: {fileID: 1865756542560546994, guid: cfde8f5228a46f744b38ec8f7150e317, type: 3}
 --- !u!1 &31884054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,7 +1644,8 @@ MonoBehaviour:
   spotID: 1
   GoodClip: {fileID: 0}
   WrongClip: {fileID: 0}
-  particles: {fileID: 0}
+  particles: {fileID: 7459200273944341767, guid: 283bfaca49fe2eb478fb1032a37e62d3, type: 3}
+  badParticles: {fileID: 1865756542560546994, guid: cfde8f5228a46f744b38ec8f7150e317, type: 3}
 --- !u!1 &439068570
 GameObject:
   m_ObjectHideFlags: 0
@@ -3137,7 +3139,8 @@ MonoBehaviour:
   spotID: 2
   GoodClip: {fileID: 0}
   WrongClip: {fileID: 0}
-  particles: {fileID: 0}
+  particles: {fileID: 7459200273944341767, guid: 283bfaca49fe2eb478fb1032a37e62d3, type: 3}
+  badParticles: {fileID: 1865756542560546994, guid: cfde8f5228a46f744b38ec8f7150e317, type: 3}
 --- !u!1 &927313994
 GameObject:
   m_ObjectHideFlags: 0
@@ -6149,7 +6152,8 @@ MonoBehaviour:
   spotID: 5
   GoodClip: {fileID: 0}
   WrongClip: {fileID: 0}
-  particles: {fileID: 0}
+  particles: {fileID: 7459200273944341767, guid: 283bfaca49fe2eb478fb1032a37e62d3, type: 3}
+  badParticles: {fileID: 1865756542560546994, guid: cfde8f5228a46f744b38ec8f7150e317, type: 3}
 --- !u!1 &1931869608
 GameObject:
   m_ObjectHideFlags: 0
@@ -7438,7 +7442,8 @@ MonoBehaviour:
   spotID: 3
   GoodClip: {fileID: 0}
   WrongClip: {fileID: 0}
-  particles: {fileID: 0}
+  particles: {fileID: 7459200273944341767, guid: 283bfaca49fe2eb478fb1032a37e62d3, type: 3}
+  badParticles: {fileID: 1865756542560546994, guid: cfde8f5228a46f744b38ec8f7150e317, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
