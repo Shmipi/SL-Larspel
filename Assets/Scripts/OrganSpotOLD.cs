@@ -23,7 +23,7 @@ public class OrganSpotOLD : MonoBehaviour
     {
      
        
-        particles.Emit(5);
+       
         gameManager = FindObjectOfType<GameManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
