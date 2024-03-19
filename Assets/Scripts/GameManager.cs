@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
             VictoryPanel.SetActive(true);
         }
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+       
 
     }
 }
