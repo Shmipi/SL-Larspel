@@ -15,9 +15,15 @@ public class OrganSpotOLD : MonoBehaviour
     public ParticleSystem badParticles;
     private GameManager gameManager;
 
+
+   
+
     // Start is called before the first frame update
     void Start()
     {
+     
+       
+        particles.Emit(5);
         gameManager = FindObjectOfType<GameManager>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
@@ -55,6 +61,7 @@ public class OrganSpotOLD : MonoBehaviour
 
                 gameManager.CheckGameState();
 
+                PlaySound(true);
                 PlayVFX(true);
             }
             else
@@ -95,7 +102,6 @@ public class OrganSpotOLD : MonoBehaviour
             {
 
                 particles.Emit(5);
-
             }
         }
         else
@@ -105,9 +111,7 @@ public class OrganSpotOLD : MonoBehaviour
         }
 
 
-
     }
-
 
 
 }

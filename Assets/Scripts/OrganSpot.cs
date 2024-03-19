@@ -54,8 +54,10 @@ public class OrganSpot : MonoBehaviour
                 GameManager.SelectedOrganID = 0;
                 //spriteRenderer.sprite = gameManager.GetComponent<GameManager>().spriteList[spotID - 1];
                 connectedSprite.gameObject.SetActive(true);
-                particles.Emit(4);
+                //particles.Emit(4);
                 gameManager.CheckGameState();
+                PlaySound(true);
+                PlayVFX(true);
 
             }
             else
@@ -73,12 +75,13 @@ public class OrganSpot : MonoBehaviour
 
     public void PlaySound(bool feedback)
     {
-        if(feedback)
+        if(feedback == true)
         {
-            {
+            
                 audioSource.clip = GoodClip;
                 audioSource.Play();
-            } }
+            
+        }
         else
         {
             audioSource.clip = WrongClip;

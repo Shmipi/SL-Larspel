@@ -44,3 +44,9 @@ TagManager:
   - name: trail
     uniqueID: 487144449
     locked: 0
+  - name: body
+    uniqueID: 2418562063
+    locked: 0
+  - name: particle
+    uniqueID: 3445787623
+    locked: 0

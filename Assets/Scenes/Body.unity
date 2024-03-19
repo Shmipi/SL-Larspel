@@ -219,10 +219,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   filled: 0
   spotID: 4
-  GoodClip: {fileID: 0}
-  WrongClip: {fileID: 0}
-  particles: {fileID: 7459200273944341767, guid: 283bfaca49fe2eb478fb1032a37e62d3, type: 3}
-  badParticles: {fileID: 1865756542560546994, guid: cfde8f5228a46f744b38ec8f7150e317, type: 3}
+  GoodClip: {fileID: 8300000, guid: 779ac609f59796f44b3d0565b17faed6, type: 3}
+  WrongClip: {fileID: 8300000, guid: 0923a547a0e8dc04db910bb2420568bc, type: 3}
+  particles: {fileID: 1006454692}
+  badParticles: {fileID: 1399981664}
 --- !u!1 &31884054
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +838,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &221715887 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6225356122949392820, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+  m_PrefabInstance: {fileID: 863311311}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &237545825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,10 +1647,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   filled: 0
   spotID: 1
-  GoodClip: {fileID: 0}
-  WrongClip: {fileID: 0}
-  particles: {fileID: 7459200273944341767, guid: 283bfaca49fe2eb478fb1032a37e62d3, type: 3}
-  badParticles: {fileID: 1865756542560546994, guid: cfde8f5228a46f744b38ec8f7150e317, type: 3}
+  GoodClip: {fileID: 8300000, guid: 779ac609f59796f44b3d0565b17faed6, type: 3}
+  WrongClip: {fileID: 8300000, guid: 0923a547a0e8dc04db910bb2420568bc, type: 3}
+  particles: {fileID: 439524411}
+  badParticles: {fileID: 1971374301}
 --- !u!1 &439068570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,6 +1743,16 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &439524411 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6225356122949392820, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+  m_PrefabInstance: {fileID: 361325406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &448217544 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6225356122949392820, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+  m_PrefabInstance: {fileID: 8075104457665974584}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &485932394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2153,7 +2168,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: b1c051827c6903d4db859d197d40c87b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2174,7 +2189,7 @@ Transform:
   m_GameObject: {fileID: 649457419}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.4177578}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3137,10 +3152,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   filled: 0
   spotID: 2
-  GoodClip: {fileID: 0}
-  WrongClip: {fileID: 0}
-  particles: {fileID: 7459200273944341767, guid: 283bfaca49fe2eb478fb1032a37e62d3, type: 3}
-  badParticles: {fileID: 1865756542560546994, guid: cfde8f5228a46f744b38ec8f7150e317, type: 3}
+  GoodClip: {fileID: 8300000, guid: 779ac609f59796f44b3d0565b17faed6, type: 3}
+  WrongClip: {fileID: 8300000, guid: 0923a547a0e8dc04db910bb2420568bc, type: 3}
+  particles: {fileID: 221715887}
+  badParticles: {fileID: 2122505409}
 --- !u!1 &927313994
 GameObject:
   m_ObjectHideFlags: 0
@@ -3690,6 +3705,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005243495}
   m_CullTransparentMesh: 1
+--- !u!198 &1006454692 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6225356122949392820, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+  m_PrefabInstance: {fileID: 16618204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1033792388
 GameObject:
   m_ObjectHideFlags: 0
@@ -4332,6 +4352,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LungPanel: {fileID: 1309175681}
+--- !u!198 &1321530862 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6177366615715915566, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+  m_PrefabInstance: {fileID: 1865649916}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1329771415
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,6 +4490,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329771415}
   m_CullTransparentMesh: 1
+--- !u!198 &1378332504 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6225356122949392820, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+  m_PrefabInstance: {fileID: 1865649916}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1378757747
 GameObject:
   m_ObjectHideFlags: 0
@@ -4599,6 +4629,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378757747}
   m_CullTransparentMesh: 1
+--- !u!198 &1399981664 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6177366615715915566, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+  m_PrefabInstance: {fileID: 16618204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1455271136
 GameObject:
   m_ObjectHideFlags: 0
@@ -4732,6 +4767,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455271136}
   m_CullTransparentMesh: 1
+--- !u!198 &1496638547 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6177366615715915566, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+  m_PrefabInstance: {fileID: 8075104457665974584}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1506164917
 GameObject:
   m_ObjectHideFlags: 0
@@ -6150,10 +6190,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   filled: 0
   spotID: 5
-  GoodClip: {fileID: 0}
-  WrongClip: {fileID: 0}
-  particles: {fileID: 7459200273944341767, guid: 283bfaca49fe2eb478fb1032a37e62d3, type: 3}
-  badParticles: {fileID: 1865756542560546994, guid: cfde8f5228a46f744b38ec8f7150e317, type: 3}
+  GoodClip: {fileID: 8300000, guid: 779ac609f59796f44b3d0565b17faed6, type: 3}
+  WrongClip: {fileID: 8300000, guid: 0923a547a0e8dc04db910bb2420568bc, type: 3}
+  particles: {fileID: 1378332504}
+  badParticles: {fileID: 1321530862}
 --- !u!1 &1931869608
 GameObject:
   m_ObjectHideFlags: 0
@@ -6380,6 +6420,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HeartPanel: {fileID: 1963414690}
+--- !u!198 &1971374301 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6177366615715915566, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+  m_PrefabInstance: {fileID: 361325406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1987081194
 GameObject:
   m_ObjectHideFlags: 0
@@ -7259,6 +7304,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115351878}
   m_CullTransparentMesh: 1
+--- !u!198 &2122505409 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6177366615715915566, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+  m_PrefabInstance: {fileID: 863311311}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3859240261783136634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7356,13 +7406,41 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6177366615715915566, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225356122949392820, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7206174055860757016, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7265433376649102178, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
       propertyPath: m_Name
       value: OrganSpot
       objectReference: {fileID: 0}
+    - target: {fileID: 7265433376649102178, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7607559375002629142, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
       propertyPath: spotID
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7673140345281127199, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929449285585332889, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929449285585332889, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8524978603194733183, guid: a4024922498bef24ba3b6e27b4198621, type: 3}
       propertyPath: m_LocalScale.x
@@ -7440,10 +7518,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   filled: 0
   spotID: 3
-  GoodClip: {fileID: 0}
-  WrongClip: {fileID: 0}
-  particles: {fileID: 7459200273944341767, guid: 283bfaca49fe2eb478fb1032a37e62d3, type: 3}
-  badParticles: {fileID: 1865756542560546994, guid: cfde8f5228a46f744b38ec8f7150e317, type: 3}
+  GoodClip: {fileID: 8300000, guid: 779ac609f59796f44b3d0565b17faed6, type: 3}
+  WrongClip: {fileID: 8300000, guid: 0923a547a0e8dc04db910bb2420568bc, type: 3}
+  particles: {fileID: 448217544}
+  badParticles: {fileID: 1496638547}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
