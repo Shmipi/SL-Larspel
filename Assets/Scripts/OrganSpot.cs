@@ -50,7 +50,7 @@ public class OrganSpot : MonoBehaviour
                 {
 
                 filled = true;
-               // spriteRenderer.enabled = false;
+                spriteRenderer.enabled = false;
                 GameManager.SelectedOrganID = 0;
                 //spriteRenderer.sprite = gameManager.GetComponent<GameManager>().spriteList[spotID - 1];
                 connectedSprite.gameObject.SetActive(true);

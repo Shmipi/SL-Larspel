@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Body.unity
     guid: e4485ea51fac38e4da1ad0561ad7b296
   - enabled: 1
-    path: Assets/Scenes/Heart.unity
+    path: Assets/Scenes/Brain.unity
     guid: 61892f7910a803945bb95b3b96521ec2
+  - enabled: 1
+    path: Assets/Scenes/Heart.unity
+    guid: dd53b9b6273a571418bec10a6eff4200
   m_configObjects: {}

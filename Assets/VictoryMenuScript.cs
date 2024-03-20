@@ -20,7 +20,7 @@ public class VictoryMenuScript : MonoBehaviour
 
     public void Menu()
     {
-        SceneManager.LoadScene("Body");
+        SceneManager.LoadScene(0);
     }
 
     public void PlayAgain()

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HeartPanelScript : MonoBehaviour
 {
@@ -26,6 +27,6 @@ public class HeartPanelScript : MonoBehaviour
 
     public void PlayHeartLevel()
     {
-        //SceneManager.LoadScene(0);
+        SceneManager.LoadScene(5);
     }
 }
