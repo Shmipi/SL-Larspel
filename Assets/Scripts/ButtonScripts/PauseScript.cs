@@ -17,13 +17,13 @@ public class PauseScript : MonoBehaviour
     public void Pause()
     {
         PausePanel.SetActive(true);
-        //Time.timeScale = 0;
+        Time.timeScale = 0;
     }
 
     public void Continue()
     {
         PausePanel.SetActive(false);
-        //Time.timeScale = 1;
+        Time.timeScale = 1;
     }
 
     public void QuitToMain()

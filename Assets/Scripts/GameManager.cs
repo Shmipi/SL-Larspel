@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +10,9 @@ public class GameManager : MonoBehaviour
 {
     public static int score;
     public static float time;
+    public static int timeScore;
+    public static int victoryTime;
+    public static int victoryScore;
     public static List<GameObject> gameObjects = new List<GameObject>();
     public OrganSpotOLD[] organSpotsOld;
     public OrganSpot[] organSpots;
@@ -16,13 +21,22 @@ public class GameManager : MonoBehaviour
     private int nrOfSpots;
     private bool organSpotsBool;
     public GameObject VictoryPanel;
+    public TextMeshProUGUI scoreTracker;
+    public TextMeshProUGUI timeTracker;
+    public TextMeshProUGUI finalTime;
+    public TextMeshProUGUI finalScore;
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
+        time = 0;
+        timeScore = 0;
+        victoryTime = 0;
+        victoryScore = 0;
         organSpotsOld = FindObjectsOfType<OrganSpotOLD>();
         organSpots = FindObjectsOfType<OrganSpot>();
+        score = 0;
 
         if (organSpotsOld != null )
         {
@@ -46,8 +60,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
         //Debug.Log(SelectedOrganID);
+        time += Time.deltaTime;
+        timeTracker.SetText("Time: " + time.ToString("0"));
     }
 
     public void CheckGameState()
@@ -56,11 +71,13 @@ public class GameManager : MonoBehaviour
 
         if(organSpotsOld != null)
         {
+            
             for (int i = 0; i < organSpotsOld.Length; i++)
             {
                 if (organSpotsOld[i].filled == true)
                 {
                     nrCompleted++;
+                    
                 }
             }
         }
@@ -78,6 +95,8 @@ public class GameManager : MonoBehaviour
         }
         Debug.Log("Nr Completed: " + nrCompleted);
         Debug.Log("Nr of Slots: " + nrOfSpots);
+        score += 50;
+        scoreTracker.SetText("Score: " + score.ToString());
 
         if (nrCompleted >= nrOfSpots)
         {
@@ -87,10 +106,18 @@ public class GameManager : MonoBehaviour
 
     private void Victory()
     {
+        victoryTime = (int)time;
+        timeScore = 400 - victoryTime*10;
+        victoryScore = score+timeScore;
+
         Debug.Log("Victory");
         if(VictoryPanel != null)
         {
             VictoryPanel.SetActive(true);
+            scoreTracker.SetText("Score: " + victoryScore.ToString());
+            finalScore.SetText("Score: " + victoryScore.ToString());
+            finalTime.SetText("Time: " + victoryTime.ToString());
+
         }
 
        
