@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static int score;
-    public static int time;
+    public static float time;
     public static List<GameObject> gameObjects = new List<GameObject>();
     public OrganSpotOLD[] organSpotsOld;
     public OrganSpot[] organSpots;
@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        time += Time.deltaTime;
         //Debug.Log(SelectedOrganID);
     }
 
